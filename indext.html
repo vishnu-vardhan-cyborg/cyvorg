@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop down menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/712630062b.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+<body class="container">
+    <div class="top">
+        <div id="rain-container"></div>
+        <label for="menu-toggle" class="menu-button"> &#9776;</label>
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <div class="dropdown-menu">
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+
+
+        <div class="main">
+            <p>Lohith</p>
+        </div>
+        <br>
+        <div class="title"> Lohith Reddy</div>
+        <p class="ohh">Passionate about changing the world with technology.</p>
+
+        <div class="icons">
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="more">
+            <button class="more">More about me</button>
+        </div>
+
+    </div>
+
+    <script>
+        const rainContainer = document.getElementById('rain-container');
+
+        for (let i = 0; i < 80; i++) {
+            const drop = document.createElement('div');
+            drop.classList.add('raindrop');
+            drop.style.left = Math.random() * 100 + 'vw';
+            drop.style.animationDuration = (1.5 + Math.random()).toFixed(2) + 's';
+            drop.style.animationDelay = Math.random().toFixed(2) + 's';
+            rainContainer.appendChild(drop);
+        }
+    </script>
+
+    <div class="ehat">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.tLotgCDtzgTdwJcTiXWRCwHaEK&pid=Api&P=0&h=180" alt="photo"></div>
+        <div class="contact">
+            <h2>About me</h2><br>I am a 5th-semester Computer Science and Engineering student at Sree Vidyanikethan
+            Engineering College,
+            Tirupati, with a passion for software <br> engineering and giving back to the community. I love working on
+            open-source projects, constantly learning, and exploring new technologies to <br> make a positive impact
+            through innovative solutions. Let's connect and collaborate to create meaningful change together!
+        </div>
+        <button class="vvv">contact</button>
+        <div class="project">Projects</div>
+     
+        <div class="slider-wrapper">
+            <button class="btn" onclick="prevSlide()">&#8592;</button>
+        
+            <div class="slider-container">
+              <div class="slider-track" id="slider">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.6n0LKUPnC2y8MO-yHqvAOwHaEK&pid=Api&P=0&h=180" alt="Image 1">
+                <img src="https://wallpapercave.com/wp/wp5732311.jpg" alt="Image 2">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.1h2Xmdrj_rKx0rAQJrZb8gHaEK&pid=Api&P=0&h=180" alt="Image 3">
+              </div>
+            </div>
+        
+            <button class="btn" onclick="nextSlide()">&#8594;</button>
+          </div>
+        
+          <script>
+            const slider = document.getElementById('slider');
+            const totalSlides = 2;
+            let currentIndex = 0;
+        
+            function updateSlider() {
+              slider.style.transform = `translateX(-${currentIndex * 600}px)`;
+            }
+        
+            function nextSlide() {
+              currentIndex = (currentIndex + 1) % totalSlides;
+              updateSlider();
+            }
+        
+            function prevSlide() {
+              currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+              updateSlider();
+            }
+          </script>
+
+
+          <div class="skills"><h1><u>Skills</u></h1></div>
+          
+          <h2>java</h2>
+           <div class="name">
+            <div class="java">
+             .
+            </div>
+           </div>
+
+           <h2>html</h2>
+           <div class="name">
+            <div class="html">
+              .
+            </div>
+           </div>
+
+           <h2>css</h2>
+           <div class="name">
+            <div class="css">
+             .
+            </div>
+           </div>
+
+           <div class="final">I'm currently looking for opportunities, if you have any questions, or if you just want to say hi, please feel free to email me at, lohithreddym4@gmail.co l</> with
+            ♥ 
+           by Lohith <br><br>Project code is open source. Feel free to fork and make your own version.</div>
+</body>
+
+</html>

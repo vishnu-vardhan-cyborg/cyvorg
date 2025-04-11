@@ -1,0 +1,269 @@
+body{
+    margin : 0px;
+     
+    font-family: sans-serif;
+    
+    
+  }
+.top{
+   
+    margin: 0;
+    height: 100vh;
+    animation: gradientMove 3s infinite alternate;
+    background: linear-gradient(to top, #cc1818, #b8df46); /* Blue to green */
+    background-size:   100% 200% ;
+    background-position: bottom;
+}
+@keyframes gradientMove {
+    from {
+      background-position: bottom;
+    }
+    to {
+      background-position: top;
+    }
+  }
+  .main
+  {
+    font-size: 20px;
+    position:absolute;
+    padding: 5px 0px;
+    padding-top: 0%;
+    padding-left: 12px;
+    
+    
+     
+  }
+  
+  .menu-button {
+    font-size: 2rem;
+    position: absolute;
+    
+    top: 0px;
+    right: 1rem;
+     
+     
+    color: rgb(14, 9, 9);
+    padding-top: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  .menu-button:hover{
+    background-color: rgb(108, 109, 110);
+  }
+  
+  .dropdown-menu {
+    position: fixed;
+    top: 3.5rem;
+    left: 0rem;
+    
+    
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu a {
+      
+    padding: 5px 0px;
+    margin-left: 13px;
+    text-decoration: none;
+    color: #080000;
+    border-bottom: 1px  ;
+  }
+  
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+  
+  #menu-toggle:checked + .dropdown-menu {
+    max-height: 500px; 
+  }
+
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 80px;
+    margin: 12% ;
+    margin-bottom: 0%;
+}
+.ohh
+{
+     text-align: center;
+}
+.icons 
+{
+    
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+     
+}
+.fa-brands{
+    padding: 10px;
+    color: rgb(18, 0, 34);
+}
+.fa-brands:hover{
+    color: rgb(115, 91, 136);
+}
+.more{
+ text-align: center;
+ font-size: 20px;
+ background: transparent;
+ border-radius: .5rem;
+}
+.more button:hover{
+      border-color: aliceblue;
+      background-color: aliceblue;
+      border-radius: .5rem;
+      
+}
+
+.raindrop {
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 10px;
+  background: #ffffff;
+  opacity: 0.5;
+  animation: rise 2s linear infinite;
+  z-index: 0; /* stay behind content */
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+img {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+h2{
+    margin-bottom: 0px; 
+    margin-left: 0%;
+}
+.contact{
+  margin-left: 20%;
+}
+.vvv{
+  margin-top: 2rem;
+margin-left: 4.7%;
+font-size: 150%;
+background-color: transparent;
+color: rgb(238, 14, 163);
+ }
+ .project{
+   
+  display: flex;
+  text-align: left;
+  margin-top: 5%;
+  background: #b19292;
+  font-size: 2rem;
+ }
+ .slider-wrapper {
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+   
+}
+
+.slider-container {
+  
+  background: #817676;
+  width: 100%;
+   
+  overflow: hidden;
+   
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.btn {
+  background: black;
+  border: none;
+  font-size: 2.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn:hover {
+  color: #6d6868;
+}
+h1{
+   
+  width: 100%;
+  background-color: #6d6868;
+}
+h2{
+  padding-left: 2rem;
+   
+}
+.name{
+  width: 50%;
+  background-color: rgb(223, 150, 41);
+  margin-left: 25%;
+  border-radius: 5px;
+}
+.java{
+   
+  width: 60%;
+  background-color: #2ce913;
+}
+.name{
+  width: 50%;
+  background-color: rgb(223, 150, 41);
+  margin-left: 0%;
+  border-radius: 5px;
+}
+.css{
+  display: flex; 
+    
+  width: 70%;
+  background-color: #2ce913;
+}
+.name{
+  
+  width: 50%;
+  background-color: rgb(223, 150, 41);
+  margin-left: 25%;
+  border-radius: 5px;
+}
+.html{
+  width: 90%;
+  background-color: #2ce913;
+}
+.final{
+  border-color: #000000;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+   width: 100%;
+   height: 10rem;
+   background-color: #da7171;
+   gap: 5px;
+}
